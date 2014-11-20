@@ -1,0 +1,29 @@
+{
+    "name": "biliboo/intervention-image-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony BilibooInterventionImageBundle",
+    "keywords": ["intervention image bundle"],
+    "homepage": "https://github.com/biliboo/intervention-image-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pierre Devillard",
+            "email": "dp@biliboo.org"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0",
+        "symfony/framework-bundle": "~2.1",
+	"intervention/image": "dev-master"
+    },
+    "autoload": {
+	"psr-0": { "Biliboo\\InterventionImageBundle": "" }
+    },
+    "target-dir": "Biliboo/InterventionImageBundle",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
