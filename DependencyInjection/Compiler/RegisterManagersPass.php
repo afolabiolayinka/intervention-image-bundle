@@ -22,7 +22,7 @@ class RegisterManagersPass implements CompilerPassInterface
         $managers = $container->getParameter('biliboo_intervention_image.managers');
 
         foreach ($managers as $manager => $config) {
-            $definition = new Definition(self::MANAGER_CLASS, $config);
+            $definition = new Definition(self::MANAGER_CLASS, [$config]);
             $id         = sprintf('biliboo_intervention_image.managers.%s', $manager);
 
             $container->setDefinition($id, $definition);
